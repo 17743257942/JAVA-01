@@ -22,10 +22,10 @@ public class HttpClient {
         try {
             response = httpClient.execute(httpGet);
             HttpEntity responseEntity = response.getEntity();
-            System.out.println("响应状态为:" + response.getStatusLine());
+            System.out.println("reseponse status :" + response.getStatusLine());
             if (responseEntity != null) {
-                System.out.println("响应内容长度为:" + responseEntity.getContentLength());
-                System.out.println("响应内容为:" + EntityUtils.toString(responseEntity));
+                System.out.println("reseponse content length :" + responseEntity.getContentLength());
+                System.out.println("responseEntity:" + EntityUtils.toString(responseEntity));
             }
 
         } catch (Exception e) {
